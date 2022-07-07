@@ -1,0 +1,88 @@
+//Fuentes tipograficas
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+//asignación de fuentes a los textos
+
+.tx{
+    color:$mytextcolor;
+    font-family: 'Kalam';
+    &-video{
+        color:$mytextcolor;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    &-h1{
+        color:$mytextcolor;
+    }
+}
+
+#navbar{
+    font-family: 'Kalam';
+}
+
+#exampleModalLabel{
+    font-family: 'Kalam';
+    color:$mytextcolor;
+}
+
+.p-2{
+    font-family: 'Quicksand';
+}
+
+.p-3{
+    color:$mytextcolor;
+    font-family: 'Kalam';
+}
+
+.fs-3{
+    font-family: 'Quicksand';
+    color:$mytextcolor;
+}
+
+.fs-4{
+    font-family: 'Quicksand';
+    color:$mytextcolor;
+
+    &:hover{
+        color:$myinfo;
+    }
+}
+
+h2{
+    font-family: 'Quicksand';
+}
+
+#parrafo{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#productos{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+//botones
+@mixin setboton ($color,$bg, $hover) {
+    font-family: 'Quicksand';
+        color:$color;
+        background-color:$bg;
+        border: none;
+
+        &:hover{
+            background-color:$hover;
+        }
+
+}
+
+.btn{
+    &-primary{
+        @include setboton ($mylight, $myinfo, $mytextcolor);
+    }
+    &-secondary{
+        @include setboton ($mylight, $myinfo, $mytextcolor);
+}
+}

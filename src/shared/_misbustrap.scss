@@ -1,0 +1,13 @@
+//Reasigna Variables Bootstrap
+
+$primary:   $myprimary;
+$secondary: $mysecondary;
+$info:      $myinfo;
+$light:     $mylight;
+$dark:      $mydark;
+
+$thumbnail-bg: $mytextcolor;
+
+
+//Variables personalizadas // libreria principal Bootstrap
+@import "../bootstrap/bootstrap.scss";
